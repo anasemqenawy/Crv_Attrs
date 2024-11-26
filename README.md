@@ -1,25 +1,17 @@
-Smart Attribute Manager
+# Smart Attribute Manager
 A compact script designed to simplify and streamline daily repetitive tasks of adding or removing attributes 
 in Autodesk Maya, making the workflow more efficient and user-friendly.
 
-Features
+# Features
 Intuitive UI for adding or removing attributes.
 Quick setup and usage.
 Reduces repetitive work, saving time and effort.
 
-Installation
-Download and place the folder:
-
-Copy the crv_attrs folder into:
-makefile
-Copy code
+## Installation
+Download and place the folder Copy the crv_attrs folder into:
 C:\Users\<username>\Documents\maya\scripts
-Run the script in Maya Script Editor:
 
-Copy and paste the following lines into the Maya Script Editor and execute:
-
-python
-Copy code
+ Run the script in Maya Script Editor:
 
 ```python
 import importlib
@@ -39,20 +31,20 @@ except:
 main = SmartAttributeUI()
 main.show()
 ```
-How to Use
+## How to Use
 After executing the script, the Smart Attribute Manager UI will appear in Maya.
 Use the UI to easily add or remove attributes for selected objects.
 Enjoy a faster and more intuitive workflow!
 
-Compatibility
+## Compatibility
 Software: Autodesk Maya
 
-Version: Compatible with Maya 2022 and above.
+## Version: Compatible with Maya 2022 and above.
 
-Contribution
+## Contribution
 Feel free to contribute or report issues!
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Optimize your Maya workflow with the Smart Attribute Manager today!
