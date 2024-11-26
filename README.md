@@ -20,6 +20,8 @@ Copy and paste the following lines into the Maya Script Editor and execute:
 
 python
 Copy code
+
+```python
 import importlib
 
 from crv_attrs import crv_attrs_ui
@@ -36,7 +38,7 @@ except:
     pass
 main = SmartAttributeUI()
 main.show()
-
+```
 How to Use
 After executing the script, the Smart Attribute Manager UI will appear in Maya.
 Use the UI to easily add or remove attributes for selected objects.
