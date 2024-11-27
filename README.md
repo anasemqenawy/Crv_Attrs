@@ -14,9 +14,7 @@ C:\Users\<username>\Documents\maya\scripts
  Run the script in Maya Script Editor:
 
 ```python
-import importlib
 from crv_attrs.crv_attrs_ui import SmartAttributeUI
-
 try:
     global main
     main.close()
