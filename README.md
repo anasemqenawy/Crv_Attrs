@@ -15,10 +15,6 @@ C:\Users\<username>\Documents\maya\scripts
 
 ```python
 import importlib
-
-from crv_attrs import crv_attrs_ui
-
-importlib.reload(crv_attrs_ui)
 from crv_attrs.crv_attrs_ui import SmartAttributeUI
 
 try:
