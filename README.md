@@ -17,6 +17,9 @@ Reduces repetitive work, saving time and effort.
 Download and place the folder Copy the crv_attrs folder into:
 C:\Users\<username>\Documents\maya\scripts
 
+# Demo 
+https://youtu.be/DMm6BTG704U
+
  Run the script in Maya Script Editor:
 
 ```python
