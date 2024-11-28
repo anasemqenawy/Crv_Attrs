@@ -10,15 +10,15 @@ Intuitive UI for adding or removing attributes.
 Quick setup and usage.
 Reduces repetitive work, saving time and effort.
 
-# UI Template
+## UI Template
 ![Sample Image](SmartAttributeUI.png)
+
+## Demo 
+https://youtu.be/DMm6BTG704U
 
 ## Installation
 Download and place the folder Copy the crv_attrs folder into:
 C:\Users\<username>\Documents\maya\scripts
-
-# Demo 
-https://youtu.be/DMm6BTG704U
 
  Run the script in Maya Script Editor:
 
