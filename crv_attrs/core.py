@@ -45,9 +45,16 @@ style_sheet_dict: dict = {"line_edit":
                               border-style: outset; 
                               border-width: 3px; 
                               border-radius: 4px;
-                              }"""
+                              font: bold;
+                              }
+                              QLineEdit:placeholder 
+                              {
+                                font: bold;
+                              }
+                              """
     ,
-                          "button_blue": """
+                          "button_blue":
+                              """
                         QPushButton
                             {
                                 height: 22.5;
@@ -70,7 +77,8 @@ style_sheet_dict: dict = {"line_edit":
                             }
                         """
     ,
-                          "button_green": """
+                          "button_green":
+                              """
                        QPushButton
                            {
                                height: 22.5;
@@ -79,6 +87,7 @@ style_sheet_dict: dict = {"line_edit":
                                border-style: outset;
                                border-width: 2px;
                                border-radius: 5px;
+                               font: bold;
                            }
                            QPushButton:pressed 
                            {
@@ -92,7 +101,8 @@ style_sheet_dict: dict = {"line_edit":
                            }
                        """
     ,
-                          "button_red": """
+                          "button_red":
+                              """
                        QPushButton
                            {
                                height: 22.5;
@@ -101,6 +111,7 @@ style_sheet_dict: dict = {"line_edit":
                                border-style: outset;
                                border-width: 2px;
                                border-radius: 5px;
+                               font: bold;
                            }
                            QPushButton:pressed 
                            {
@@ -153,6 +164,10 @@ style_sheet_dict: dict = {"line_edit":
                                   border-width: 2px; 
                                   border-radius: 5px;
                               }
+                              QDoubleSpinBox:placeholder 
+                              {
+                                font: bold;
+                              }
                               """
     ,
                           "group_box":
@@ -165,6 +180,14 @@ style_sheet_dict: dict = {"line_edit":
                                   border-radius: 6px;
                                   border-color: black;
                                   padding: 10px;
+                              }
+                              """
+    ,
+                          "radio_button":
+                              """
+                              QRadioButton 
+                              {
+                                  font: bold 13px;
                               }
                               """
                           }
