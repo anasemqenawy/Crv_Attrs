@@ -2,7 +2,7 @@
 A compact script designed to simplify and streamline daily repetitive tasks of adding or removing attributes 
 in Autodesk Maya, making the workflow more efficient and user-friendly.
 
-![Alt text]([path/to/image.png](https://github.com/anasemqenawy/Crv_Attrs/blob/main/SmartAttributeUI.png))
+![Alt text](Crv_Attrs/SmartAttributeUI.png)
 
 
 # Features
