@@ -148,6 +148,10 @@ class SmartAttributeUI(QtWidgets.QDialog):
         core.apply_style_sheet(widget_list=[self.min_val_field,
                                             self.max_val_field],
                                stylesheet=core.style_sheet_dict["spin_box"])
+        core.apply_style_sheet(widget_list=[self.bool_radio,
+                                            self.float_radio,
+                                            self.enum_radio],
+                               stylesheet=core.style_sheet_dict["radio_button"])
 
     def create_connections(self):
         self.get_objects_button.clicked.connect(self.get_scene_objects)
