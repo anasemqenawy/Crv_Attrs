@@ -19,7 +19,7 @@ or use it as Enum attribute with strings as you want.
 ![Sample Image](SmartAttributeUI.png)
 
 ## Demo 
-https://www.youtube.com/watch?v=7JlIhTZ-TU8
+https://youtu.be/LSRvlhCwYZM
 
 ## Installation
 Download and place the folder Copy the crv_attrs folder into:
