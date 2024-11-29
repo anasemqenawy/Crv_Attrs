@@ -54,12 +54,14 @@ class SmartAttributeUI(QtWidgets.QDialog):
 
         # Min/Max Values
         self.min_val_label = QtWidgets.QLabel(":: Min ::")
+
         self.min_val_field = QtWidgets.QDoubleSpinBox()
         self.min_val_field.setRange(-10000, 10000)
         self.min_val_field.setValue(0)
         self.min_val_field.setEnabled(False)
 
         self.max_val_label = QtWidgets.QLabel(":: Max ::")
+
         self.max_val_field = QtWidgets.QDoubleSpinBox()
         self.max_val_field.setRange(-10000, 10000)
         self.max_val_field.setValue(10)
@@ -122,36 +124,20 @@ class SmartAttributeUI(QtWidgets.QDialog):
         main_layout.addLayout(organize_layout)
 
     def define_widgets_style_sheet(self):
-        core.apply_style_sheet(widget_list=[self.get_objects_button,
-                                            self.get_separator_button,
-                                            ],
-                               stylesheet=core.style_sheet_dict["button_blue"])
+        # Group widgets by style
+        widgets_by_style = {
+            "button_blue": [self.get_objects_button, self.get_separator_button],
+            "button_green": [self.add_attrs_button],
+            "button_red": [self.delete_attrs_button],
+            "line_edit": [self.objects_field, self.separator_attr_field, self.attrs_field],
+            "label": [self.attrs_label, self.min_val_label, self.max_val_label],
+            "spin_box": [self.min_val_field, self.max_val_field],
+            "radio_button": [self.bool_radio, self.float_radio, self.enum_radio],
+        }
 
-        core.apply_style_sheet(widget_list=[self.add_attrs_button,
-                                            ],
-                               stylesheet=core.style_sheet_dict["button_green"])
-
-        core.apply_style_sheet(widget_list=[self.delete_attrs_button,
-                                            ],
-                               stylesheet=core.style_sheet_dict["button_red"])
-
-        core.apply_style_sheet(widget_list=[self.objects_field,
-                                            self.separator_attr_field,
-                                            self.attrs_field],
-                               stylesheet=core.style_sheet_dict["line_edit"])
-
-        core.apply_style_sheet(widget_list=[self.attrs_label,
-                                            self.min_val_label,
-                                            self.max_val_label],
-                               stylesheet=core.style_sheet_dict["label"])
-
-        core.apply_style_sheet(widget_list=[self.min_val_field,
-                                            self.max_val_field],
-                               stylesheet=core.style_sheet_dict["spin_box"])
-        core.apply_style_sheet(widget_list=[self.bool_radio,
-                                            self.float_radio,
-                                            self.enum_radio],
-                               stylesheet=core.style_sheet_dict["radio_button"])
+        # Apply stylesheets in a loop
+        for style, widgets in widgets_by_style.items():
+            core.apply_style_sheet(widget_list=widgets, stylesheet=core.style_sheet_dict[style])
 
     def create_connections(self):
         self.get_objects_button.clicked.connect(self.get_scene_objects)
