@@ -3,18 +3,23 @@ A compact script designed to simplify and streamline daily repetitive tasks of a
 in Autodesk Maya, making the workflow more efficient and user-friendly.
 
 
-
-
 # Features
 Intuitive UI for adding or removing attributes.
 Quick setup and usage.
 Reduces repetitive work, saving time and effort.
+================================================
+Add as many attrs as you want for any number of objects 
+modify the attribute type if you want at any time.
+
+organize each section of attrs by the separator attribute 
+or use it as Enum attribute with strings as you want.
+  
 
 ## UI Template
 ![Sample Image](SmartAttributeUI.png)
 
 ## Demo 
-https://youtu.be/DMm6BTG704U
+https://www.youtube.com/watch?v=7JlIhTZ-TU8
 
 ## Installation
 Download and place the folder Copy the crv_attrs folder into:
