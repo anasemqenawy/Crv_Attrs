@@ -4,7 +4,7 @@ in Autodesk Maya, making the workflow more efficient and user-friendly.
 
 
 # Features
-Intuitive UI for adding or removing attributes.
+Intuitive PyQt UI for adding or removing attributes.
 Quick setup and usage.
 Reduces repetitive work, saving time and effort.
 
