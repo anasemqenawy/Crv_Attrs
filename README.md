@@ -7,7 +7,7 @@ in Autodesk Maya, making the workflow more efficient and user-friendly.
 Intuitive UI for adding or removing attributes.
 Quick setup and usage.
 Reduces repetitive work, saving time and effort.
-================================================
+
 Add as many attrs as you want for any number of objects 
 modify the attribute type if you want at any time.
 
