@@ -20,14 +20,12 @@ def enable_undo(function, _name=None):
 
     def undo_func(*args, **kwargs):
         # Open Chunk
-        cmds.cycleCheck(e=False)
         cmds.undoInfo(openChunk=True, chunkName=_name)
 
         result = function(*args, **kwargs)
 
         # Close Chunk
         cmds.undoInfo(closeChunk=True)
-        cmds.cycleCheck(e=True)
 
         return result
 
@@ -225,7 +223,6 @@ def connect_widget_to_widget(drv_widget: QtWidgets,
 # -------------------------------------------------
 # ------------ Attrs Core Functions ---------------
 # -------------------------------------------------
-
 def convert_selected_textfield(input_str_list: str):
     """
     Cleans and processes a string representing a list, returning a sorted list of items.
